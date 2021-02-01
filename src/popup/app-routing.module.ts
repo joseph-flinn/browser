@@ -39,6 +39,7 @@ import { CollectionsComponent } from './vault/collections.component';
 import { CurrentTabComponent } from './vault/current-tab.component';
 import { GroupingsComponent } from './vault/groupings.component';
 import { PasswordHistoryComponent } from './vault/password-history.component';
+import { SendComponent } from './send/send.component';
 import { ShareComponent } from './vault/share.component';
 import { ViewComponent } from './vault/view.component';
 
@@ -265,6 +266,13 @@ const routes: Routes = [
                 canActivate: [AuthGuardService],
                 data: { state: 'tabs_settings' },
             },
+            {
+                path: 'send',
+                component: SendComponent,
+                canActivate: [AuthGuardService],
+                data: { state: 'tabs_send' },
+            },
+
         ],
     },
 ];

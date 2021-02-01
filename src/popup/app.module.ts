@@ -45,6 +45,7 @@ import { CollectionsComponent } from './vault/collections.component';
 import { CurrentTabComponent } from './vault/current-tab.component';
 import { GroupingsComponent } from './vault/groupings.component';
 import { PasswordHistoryComponent } from './vault/password-history.component';
+import { SendComponent } from './send/send.component';
 import { ShareComponent } from './vault/share.component';
 import { ViewComponent } from './vault/view.component';
 
@@ -205,6 +206,7 @@ registerLocaleData(localeZhTw, 'zh-TW');
         RegisterComponent,
         SearchCiphersPipe,
         SelectCopyDirective,
+        SendComponent,
         SettingsComponent,
         ShareComponent,
         StopClickDirective,
