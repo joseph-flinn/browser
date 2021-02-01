@@ -5,7 +5,7 @@ import {
 
 import { SendView } from 'jslib/models/view/sendView';
 
-import { SendComponent as BaseSendComponent } from 'jslib/src/angular/components/send/send.component';
+import { SendComponent as BaseSendComponent } from 'jslib/angular/components/send/send.component';
 
 import { EnvironmentService } from 'jslib/abstractions/environment.service';
 import { I18nService } from 'jslib/abstractions/i18n.service';
