@@ -128,11 +128,17 @@ jobs:
           node --version
           npm --version
 
+      - name: Test file exists - 1
+        run: ls
+
       - name: npm setup & test
         run: |
           npm install
           npm run dist
           npm run test
+
+      - name: Test file exists - 2
+        run: ls
 
       - name: gulp
         run: gulp ci
@@ -148,6 +154,11 @@ jobs:
           cd ../
           del /S/Q "Source\.git\objects\pack\*"
           call 7z a browser-source-%BUILD_NUMBER%.zip "Source\*"
+
+      - name: Test file exists - 3
+        run: |
+          ls dist
+          ls coverage
 
       - name: upload opera release asset
         uses: actions/upload-release-asset@e8f9f06c4b078e705bd2ea027f0926603fc9b4d5
